@@ -29,13 +29,16 @@
     <p>Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.</p>
 
     <h2>Implement the LRUCache class:</h2>
-
-    <p><code>LRUCache(int capacity)</code> Initialize the LRU cache with positive size capacity.</p>
-    <p><code>int get(int key)</code> Return the value of the key if the key exists, otherwise return -1.</p>
-    <p><code>void put(int key, int value)</code> Update the value of the key if the key exists. Otherwise, add the key-value pair to the cache. If the number of keys exceeds the capacity from this operation, evict the least recently used key.</p>
+    <ul>
+        <li><code>LRUCache(int capacity)</code> Initialize the LRU cache with positive size capacity.</li>
+        <li><code>int get(int key)</code> Return the value of the key if the key exists, otherwise return -1.</li>
+        <li><code>void put(int key, int value)</code> Update the value of the key if the key exists. Otherwise, add the key-value pair to the cache. If the number of keys exceeds the capacity from this operation, evict the least recently used key.</li>
+    </ul>
     <h3>Follow up:</h3>
     <p>Could you do get and put in O(1) time complexity?</p>
     <div w3-include-html="pages/lru_code.html"></div>
+    <h2>Comments</h2>
+    <div w3-include-html="pages/disqus.html"></div>
     <h2>References</h2>
     <p>Johnson, T. and Shasha, D., 1994. [online] Vldb.org. Available at:
         <a href="http://www.vldb.org/conf/1994/P439.PDF" target="_blank"><i class="fa fa-external-link"></i></a>.</p>

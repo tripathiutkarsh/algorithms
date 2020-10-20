@@ -96,7 +96,8 @@ pre {
             line-height: 30px;
         }
         
-        p {
+        p,
+        ul {
             font-family: Raleway;
             font-size: 21px;
             font-style: normal;
