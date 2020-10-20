@@ -83,6 +83,15 @@ h3 {
     line-height: 30px;
 }
 
+h4 {
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
 p {
     font-family: Raleway;
     font-size: 21px;
@@ -109,6 +118,24 @@ pre {
     font-variant: normal;
     font-weight: 400;
     line-height: 20px;
+}
+
+header {
+    background-color: #014d4e;
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-align: left;
+}
+
+footer {
+    background-color: #014d4e;
+    padding: 2px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    text-align: center;
 }
 
 
