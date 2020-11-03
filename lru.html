@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="google-site-verification" content="LVu1kLowmy6Ddz-4SP3dDMfGh7ymEp8ynpEchCLG3lU" />
+</head>
+
+<body>
+    <header>
+        <h2 class="margin-left-right">Algorithms</h2>
+    </header>
+    <div class="margin-left-right">
+        <h1>Least recently used (LRU)</h1>
+        <p>Discards the least recently used items first. This algorithm requires keeping track of what was used when, which is expensive if one wants to make sure the algorithm always discards the least recently used item. General implementations of this
+            technique require keeping "age bits" for cache-lines and track the "Least Recently Used" cache-line based on age-bits. In such an implementation, every time a cache-line is used, the age of all other cache-lines changes. LRU is actually a
+            family of caching algorithms with members including 2Q by Theodore Johnson and Dennis Shasha (Johnson and Shasha, 1994), and LRU/K by Pat O'Neil, Betty O'Neil and Gerhard Weikum (O'Neil, O'Neil and Weikum, 1993).</p>
+        <p>The access sequence for the below example is A B C D E D F.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Lruexample.png" />
+        <p>In the above example once A B C D gets installed in the blocks with sequence numbers (Increment 1 for each new Access) and when E is accessed, it is a miss and it needs to be installed in one of the blocks. According to the LRU Algorithm, since
+            A has the lowest Rank(A(0)), E will replace A.</p>
+        <p>Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.</p>
+
+        <h2>Implement the LRUCache class:</h2>
+        <ul>
+            <li><code>LRUCache(int capacity)</code> Initialize the LRU cache with positive size capacity.</li>
+            <li><code>int get(int key)</code> Return the value of the key if the key exists, otherwise return -1.</li>
+            <li><code>void put(int key, int value)</code> Update the value of the key if the key exists. Otherwise, add the key-value pair to the cache. If the number of keys exceeds the capacity from this operation, evict the least recently used key.</li>
+        </ul>
+        <h3>Follow up:</h3>
+        <p>Could you do get and put in O(1) time complexity?</p>
+        <div w3-include-html="pages/lru_code.html"></div>
+        <h2>Comments</h2>
+        <div w3-include-html="pages/disqus.html"></div>
+        <h2>References</h2>
+        <p>Johnson, T. and Shasha, D., 1994. [online] Vldb.org. Available at:
+            <a href="http://www.vldb.org/conf/1994/P439.PDF" target="_blank"><i class="fa fa-external-link"></i></a>.</p>
+        <p>O'Neil, E., O'Neil, P. and Weikum, G., 1993. The LRU-K page replacement algorithm for database disk buffering. ACM SIGMOD Record, [online] 22(2), pp.297-306. Available at:
+            <a href="http://www.cs.cmu.edu/~christos/courses/721-resources/p297-o_neil.pdf" target="_blank"><i
+                    class="fa fa-external-link"></i></a>.</p>
+    </div>
+
+    <footer>
+        <h4>Copyright © 2020 by Utkarsh Tripathi</h4>
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+<script>
+    includeHTML();
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180960300-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-180960300-1');
+</script>
+
+</html>
